@@ -246,7 +246,7 @@ dependencies = [
  "cookie",
  "failure",
  "idna 0.1.5",
- "log 0.4.8",
+ "log",
  "publicsuffix",
  "serde",
  "serde_json",
@@ -522,7 +522,7 @@ dependencies = [
  "bitflags 1.2.1",
  "libc",
  "libgit2-sys",
- "log 0.4.8",
+ "log",
  "url 2.1.1",
 ]
 
@@ -538,8 +538,8 @@ dependencies = [
  "futures",
  "http",
  "indexmap",
- "log 0.4.8",
- "slab 0.4.2",
+ "log",
+ "slab",
  "string",
  "tokio-io",
 ]
@@ -604,7 +604,7 @@ dependencies = [
  "httparse",
  "iovec",
  "language-tags",
- "log 0.4.8",
+ "log",
  "mime",
  "net2",
  "percent-encoding 1.0.1",
@@ -612,7 +612,6 @@ dependencies = [
  "time",
  "tokio-core",
  "tokio-io",
- "tokio-proto",
  "tokio-service",
  "unicase",
  "want 0.0.4",
@@ -633,7 +632,7 @@ dependencies = [
  "httparse",
  "iovec",
  "itoa",
- "log 0.4.8",
+ "log",
  "net2",
  "rustc_version",
  "time",
@@ -659,7 +658,7 @@ dependencies = [
  "http",
  "httparse",
  "language-tags",
- "log 0.4.8",
+ "log",
  "mime",
  "percent-encoding 1.0.1",
  "time",
@@ -764,11 +763,11 @@ dependencies = [
  "futures",
  "futures-cpupool",
  "git2",
- "hyper 0.11.27",
+ "hyper 0.12.35",
  "hyper-tls",
  "josh",
  "lazy_static 1.4.0",
- "log 0.4.8",
+ "log",
  "rand 0.7.3",
  "regex",
  "reqwest",
@@ -796,7 +795,7 @@ version = "0.3.0"
 dependencies = [
  "clap",
  "futures",
- "hyper 0.11.27",
+ "hyper 0.12.35",
  "tokio-core",
  "tokio-io",
  "tokio-process",
@@ -876,15 +875,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c4da24a77a3d8a6d4862d95f72e6fdb9c09a643ecdb402d754004a557f2bec75"
 dependencies = [
  "scopeguard",
-]
-
-[[package]]
-name = "log"
-version = "0.3.9"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e19e8d5c34a3e0e2223db8e060f9e8264aeeb5c5fc64a4ee9965c062211c024b"
-dependencies = [
- "log 0.4.8",
 ]
 
 [[package]]
@@ -975,10 +965,10 @@ dependencies = [
  "iovec",
  "kernel32-sys",
  "libc",
- "log 0.4.8",
+ "log",
  "miow 0.2.1",
  "net2",
- "slab 0.4.2",
+ "slab",
  "winapi 0.2.8",
 ]
 
@@ -988,7 +978,7 @@ version = "0.1.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f5e374eff525ce1c5b7687c4cef63943e7686524a387933ad27ca7ec43779cb3"
 dependencies = [
- "log 0.4.8",
+ "log",
  "mio",
  "miow 0.3.3",
  "winapi 0.3.8",
@@ -1544,7 +1534,7 @@ dependencies = [
  "http",
  "hyper 0.12.35",
  "hyper-old-types",
- "log 0.4.8",
+ "log",
  "mime",
  "mime_guess",
  "serde",
@@ -1768,21 +1758,9 @@ dependencies = [
 
 [[package]]
 name = "slab"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "17b4fcaed89ab08ef143da37bc52adbcc04d4a69014f4c1208d6b51f0c47bc23"
-
-[[package]]
-name = "slab"
 version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8"
-
-[[package]]
-name = "smallvec"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4c8cbcd6df1e117c2210e13ab5109635ad68a929fcbb8964dc965b76cb5ee013"
 
 [[package]]
 name = "smallvec"
@@ -1891,12 +1869,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "take"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b157868d8ac1f56b64604539990685fa7611d8fa9e5476cf0c02cf34d32917c5"
-
-[[package]]
 name = "tempdir"
 version = "0.3.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2003,7 +1975,7 @@ dependencies = [
  "bytes",
  "futures",
  "iovec",
- "log 0.4.8",
+ "log",
  "mio",
  "scoped-tls",
  "tokio",
@@ -2052,7 +2024,7 @@ checksum = "57fc868aae093479e3131e3d165c93b1c7474109d13c90ec0dda2a1bbfff0674"
 dependencies = [
  "bytes",
  "futures",
- "log 0.4.8",
+ "log",
 ]
 
 [[package]]
@@ -2065,31 +2037,13 @@ dependencies = [
  "futures",
  "lazy_static 1.4.0",
  "libc",
- "log 0.4.8",
+ "log",
  "mio",
  "mio-named-pipes",
  "tokio-io",
  "tokio-reactor",
  "tokio-signal",
  "winapi 0.3.8",
-]
-
-[[package]]
-name = "tokio-proto"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8fbb47ae81353c63c487030659494b295f6cb6576242f907f203473b191b0389"
-dependencies = [
- "futures",
- "log 0.3.9",
- "net2",
- "rand 0.3.23",
- "slab 0.3.0",
- "smallvec 0.2.1",
- "take",
- "tokio-core",
- "tokio-io",
- "tokio-service",
 ]
 
 [[package]]
@@ -2101,11 +2055,11 @@ dependencies = [
  "crossbeam-utils 0.7.2",
  "futures",
  "lazy_static 1.4.0",
- "log 0.4.8",
+ "log",
  "mio",
  "num_cpus",
  "parking_lot",
- "slab 0.4.2",
+ "slab",
  "tokio-executor",
  "tokio-io",
  "tokio-sync",
@@ -2172,9 +2126,9 @@ dependencies = [
  "crossbeam-utils 0.7.2",
  "futures",
  "lazy_static 1.4.0",
- "log 0.4.8",
+ "log",
  "num_cpus",
- "slab 0.4.2",
+ "slab",
  "tokio-executor",
 ]
 
@@ -2186,7 +2140,7 @@ checksum = "93044f2d313c95ff1cb7809ce9a7a05735b012288a888b62d4434fd58c94f296"
 dependencies = [
  "crossbeam-utils 0.7.2",
  "futures",
- "slab 0.4.2",
+ "slab",
  "tokio-executor",
 ]
 
@@ -2210,7 +2164,7 @@ checksum = "e2a0b10e610b39c38b031a2fcab08e4b82f16ece36504988dcbd81dbba650d82"
 dependencies = [
  "bytes",
  "futures",
- "log 0.4.8",
+ "log",
  "mio",
  "tokio-codec",
  "tokio-io",
@@ -2227,7 +2181,7 @@ dependencies = [
  "futures",
  "iovec",
  "libc",
- "log 0.4.8",
+ "log",
  "mio",
  "mio-uds",
  "tokio-codec",
@@ -2291,7 +2245,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5e0f8c7178e13481ff6765bd169b33e8d554c5d2bbede5e32c356194be02b9b9"
 dependencies = [
  "lazy_static 1.4.0",
- "log 0.4.8",
+ "log",
  "tracing-core",
 ]
 
@@ -2480,7 +2434,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a05d9d966753fa4b5c8db73fcab5eed4549cfe0e1e4e66911e5564a0085c35d1"
 dependencies = [
  "futures",
- "log 0.4.8",
+ "log",
  "try-lock 0.1.0",
 ]
 
@@ -2491,7 +2445,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b6395efa4784b027708f7451087e647ec73cc74f5d9bc2e418404248d679a230"
 dependencies = [
  "futures",
- "log 0.4.8",
+ "log",
  "try-lock 0.2.2",
 ]
 
@@ -2519,7 +2473,7 @@ checksum = "d967d37bf6c16cca2973ca3af071d0a2523392e4a594548155d89a678f4237cd"
 dependencies = [
  "bumpalo",
  "lazy_static 1.4.0",
- "log 0.4.8",
+ "log",
  "proc-macro2",
  "quote",
  "syn",
